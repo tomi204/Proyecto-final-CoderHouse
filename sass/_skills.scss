@@ -45,9 +45,11 @@
   /* padding: 40px; */
   justify-content: center;
   align-items: center;
+  margin: 0px;
   transition: all 0.2s ease;
   position: relative;
   font-size: 22px;
+  top: 20px;
 }
 
 .ul-container-3 li a::before {
@@ -99,4 +101,23 @@
 }
 h3 {
   color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 800px) {
+  .section-names-container-3 {
+    font-size: medium;
+    align-items: center;
+    justify-items: flex-end;
+  }
+  .front {
+    display: list-item;
+    position: relative;
+    bottom: 26px;
+    left: 36px;
+  }
+
+  #h3-F {
+    font-size: 30px;
+    display: flex;
+    left: 45px;
+  }
 }

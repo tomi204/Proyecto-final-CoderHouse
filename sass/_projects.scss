@@ -10,18 +10,6 @@
   justify-content: space-between;
 }
 
-.header-container {
-  width: 20%;
-  min-width: 280px;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.208);
-  backdrop-filter: blur(20px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 nav {
   width: 100%;
   height: 90%;
@@ -71,6 +59,8 @@ nav {
   transition: all 0.2s ease;
   position: relative;
   font-size: 22px;
+  right: 15px;
+  top: 25px;
 }
 
 .ul-container-2 li a::before {
@@ -101,27 +91,66 @@ nav {
     transform: translateX(0);
   }
 }
+.section-names-container-5 {
+  clip-path: inset(0% 0% 0% 12%);
+  background-color: rgba(0, 0, 0, 0.162);
+  width: 70%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-right: 30px;
+}
 // cards
 :root {
   --gradient: linear-gradient(to left top, #dd2476 10%, #ff512f 90%) !important;
 }
-.btn {
-  border: 5px solid;
-  border-image-slice: 1;
-  background: var(--gradient) !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: transparent !important;
-  border-image-source: var(--gradient) !important;
-  text-decoration: none;
-  transition: all 0.4s ease;
+
+.row {
+  display: flex;
+  align-items: center;
 }
 
-.btn:hover,
-.btn:focus {
-  background: var(--gradient) !important;
-  -webkit-background-clip: none !important;
-  -webkit-text-fill-color: #fff !important;
-  border: 5px solid #fff !important;
-  box-shadow: #222 1px 0 10px;
-  text-decoration: underline;
+.col-md-4 {
+  position: relative;
+  left: 95px;
+  margin: 15px;
+}
+@media screen and (max-width: 850px) {
+  .main-container-2 {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/fondo/gokuU.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .section-names-container-5 {
+    clip-path: inset(0% 0% 0% 12%);
+    background-color: rgba(0, 0, 0, 0.162);
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 0px;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+  }
+  .col-md-4 {
+    position: relative;
+    left: 2px;
+    margin: 19px;
+  }
+  .card {
+    max-width: 180px;
+    bottom: 150px;
+  }
 }

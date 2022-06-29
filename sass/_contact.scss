@@ -8,3 +8,25 @@
   display: flex;
   justify-content: space-between;
 }
+
+.section-names-container-5 {
+  clip-path: inset(0% 0% 0% 12%);
+  background-color: rgba(0, 0, 0, 0.162);
+  width: 20%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  // padding-right: 30px;
+}
+#mis_redes {
+  color: rgb(0, 0, 0);
+}
+.div-redes a {
+  margin: 25px;
+  display: list-item;
+  justify-content: center;
+  text-decoration: none;
+  list-style: none;
+}
